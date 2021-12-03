@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.title_box{
+    position: relative;
+    border-style:solid;
+    height: 50px;
+    width: 50%;
+    background-color:darkred;
+    margin-left: 25%;
+    margin-bottom: 1%;
+    font-size: 30;
+    margin-top:1%;
+    }
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+}
+body{
+  background: #42455a;
+}
+section{
+  min-height: 85vh;
+}
+section .container{
+  margin: auto;
+}
+section h1{
+  margin: auto;
+}
+section h2{
+  text-align: center;
+}
+section .text-container{
+   display: flex;
+}
+
+@media {
+  section h1{
+    font-size: 2rem;
+    text-align: center;
+  }
+  section .text-container{
+    flex-direction: column;
+  }
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.box{
+    position:relative;
+    margin-top: 1%;
+    margin-right: auto;
+    width:60%;
+    height: auto;
+    border: 5px;
+    border-style: groove;
+    background-color:gray;
+    }
+.subBox{
+    margin-top: -1%;
+    margin-bottom: 15px;
+    padding-top: 10px;
+    height:10%;
+    width: 65%;
+    background-color: darkgray;
+    text-align: center;
+    margin-left:17.5%;
+    margin-right:17.5%;
+    border-style: ridge;
+    font-size: 25;
+        }
+.textStyle{
+    text-indent: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+        }
+</style>
+    
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+</script>
+</head>
+<body style='background-image: url(images/maxresdefault.jpg); background-size: cover'>
+    <div class='title_box'>
+        <h2 style='text-align: center; color: orangered; margin-top: 1%'>Differences in Soul</h2>
+    </div>
+<section class='containter reveal'>
+    <div class='row'>
+        <div class='column'>
+        </div>
+        <div class='column'>
+            <div class='text-container'>
+                <div class='box' style='width: auto'>
+                    <img src="images/deadbeats.jpg" width='25px' height="25px">
+                    <div class='subBox' style='text-align: center; margin-top: -9%; margin-bottom: 1%'>
+                        <h1>Significance</h1>
+                    </div>
+                    <p style='margin-top: 1%;' class='textStyle'>Where do we go when we die? Is it our soul that goes? What defines as a soul? There are
+                        many more questions about what happens after death, but specifically, what happens to the soul
+                        when we do die? Since ancient times, these questions about soul and life after death have been
+                        explored countless times by many known Greek philosophers such as Aristotle, Plato, and
+                        Epicurus. These questions were also answered and explored by the sacred texts of religions we
+                        know of today, specifically Christianity and Judaism. But how does the human soul behave after
+                        the “body” dies in Ancient Greece compared to those in Christianity and Judaism, and how did
+                        the beliefs differ in the creation of one’s soul?
+                    </p>
+                    <p class='textStyle'>The thought of death is something that everyone thinks about. In this page, I will go into details about our soul, because in in Christanity, Ancient Greece,
+                    and Judaism, they all believed in the thought that the humans has a soul. Everyone human has a soul. And I will go into how each one of them thinks. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+<div class='container reveal'>
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+            <h2 style='text-align: center; margin-bottom: 1%'><u>Christanity</u></h2>
+                <p class='textStyle'> “And the Lord God formed man of the
+slime of the earth: and breathed into his face the breath of life, and man became a living soul”
+(Book of Genesis/Bible, Chapter 2 - 7). This suggests that we humans at first did not possess a
+soul at first, but it was because of God that we have received the soul. Thus, giving us the idea
+that a soul was given to the people by God.</p>
+            <p class='textStyle'>Christianity and Judaism share similar thoughts of the soul, one example is how God has
+<img src="images/sixty_seconds_for_a_soul-1379621766m.jpg" style='float: left; height: 300px; width: 100px; margin: 5px'>created men, in the Book of Genesis, it is stated that, “And the Lord God formed man of the
+slime of the earth: and breathed into his face the breath of life, and man became a living soul”
+(Book of Genesis/Bible, Chapter 2 - 7). This suggests that humans did not possess a
+soul at first, but it was because of God that we have received the soul. Thus, gives the idea
+that a soul was given to the people by God</p>
+            <p class='textStyle'>Matthew 10:28
+“And do not fear those who kill the body, but are unable to kill the soul; but rather fear Him who is able to destroy both soul and body in hell.” This suggests that even after death, those who are "dead" will presumebly live on.
+            </p>
+            <p class='textStyle'>In death, Christianity’s belief that the soul will return to God when one dies. In the Book
+of Ecclesiastes of the Bible, it is said, “And the dust return into its earth, from whence it was, andS
+the spirit return to God, who gave it” (Book of Ecclesiastes – Bible, Chapter 12 – 7). This
+suggests that the soul does not keep on living on as different people have different souls.</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+            <h2 style='text-align: center; margin-bottom: 1%'><u>Ancient Greece</u></h2>
+                <p class='textStyle' style="margin-top: 1%">
+                      In the
+fifth century, having a soul simply means that you are alive (Lorenz Hendrik, Ancient Theories
+of Soul). While the two’s thoughts of how the soul came to be is different, the part where life
+requires the soul stays the same within the three different thoughts and ideas.
+                </p>
+                    <p class='textStyle'>In the <i>Odyssey</i>, when Odysseus goes down into the underworld, he is encountered by one
+                    of his shipmates, Elpenor and asked why he is down here. Elpenor describes what happened to <img src="images/Land-of-the-dead.jpg.crdownload" style="float: right; margin: 5px" alt='Land of the Dead'><figcaption>Land of the Dead - Styx</figcaption>
+                    him and how he died while also saying, “my soul flew down to Death” (Homer, Book 11 of the
+                    Odyssey, 176). This tells us that even though he has been declared “dead” in the regular world,
+                    he still retains his ego and is able to think. This shows that the soul doesn’t go anywhere but
+                    stays and wanders in the Underworld.</p>
+                <p class='textStyle'>In <i>Phaedo</i>, when asked the question, “Is the soul immortal?” Cebes has replied with, “It
+is” and the person asking the question, replied “Good” as if the group as agreed upon the answer
+(Pluto, Phaedo, 60). Because they are considered the “best” philosophers during that time, it can
+be implied that their thoughts may have a massive impact onto the publics view of thinking and
+as a result – we can think that most of the public’s view of the soul could be similar. Many Gree
+philosophers have thought the same thing about the soul, and it is the fact that the soul is
+indestructible and immortal (Pluto, Phaedo, 62-63).</p>
+            <p class='textStyle'> In the
+fifth century, having a soul simply means that you are alive (Lorenz Hendrik, Ancient Theories
+of Soul). While the two’s thoughts of how the soul came to be is different, the part where life
+requires the soul stays the same within the three different thoughts and ideas.
+</p>
+        </div>
+        <div class="column" style="background-color:#ccc;">
+            <h2 style='text-align: center'><u>Judaism</u></h2>
+            <p class='textStyle'>The people of Judaism also believes something similar to what Christanity believes in.</p>    
+            <p class='textStyle'> In the Hebrew, where
+“Then the Lord God formed man of the dust of the ground, and breathed into his nostrils the
+breath of life; and man became a living soul” (Hebrew – Genesis, Chapter 2 – 7).</p>
+            <p class='textStyle'>“A Jewish soul has an intrinsic “spirit of holiness and purity” to
+it, a spirit that can purge itself of any “impure spirits and powers” that wish to attach themselves
+to the body” (Saul Epstein and Sara Libby Robinson, The Soul, Evil Spirits, and the Undead:
+<img src="images/soulleaving.jpg" style='float: left; height: 300px; width: 100px; margin: 5px'>Vampires, Death, and Burial in Jewish Folklore and Law, 240). This statement reasons that the
+soul is the meaning or is the spirit of something pure and has a holiness that one must protect
+from the evils of the words, such as sins. According to the <i>Body and Soul</i>, the soul exists in two
+places, one is separated from the body and that they exist in a fully conscious state in the ethereal
+realm (My Jewish Learning Body and soul). In the Hebrew, it is stated that, “For the living know
+that they shall die; but the dead know not any thing, neither have they any more a reward; for the
+memory of them is forgotten.” (Ecclesiates – Hebrew, 9 – 5) This statement is similar to that of
+what happens in Christianity where the souls of the “current” people are lost, and their memories
+are gone.</p>
+        </div>
+    </div>
+</div>
+</section>
+<section class='containter reveal'>
+    <div class='row'>
+        <div class='column'>
+        </div>
+        <div class='column'>
+            <div class='text-container'>
+                <div class='box' style='width: auto'>
+                    <div class='subBox' style='text-align: center; margin-top: -9%; margin-bottom: 1%'>
+                        <h1>Connecting the Dots</h1>
+                    </div>
+                    <p style='margin-top: 1%;' class='textStyle'>
+                        This matters because lets say you were to die, what do you think would happen? Would you think it is over? Or would you think you would keep living on? Because people like Aristole have thought
+                        about what happens after death, it also gives people the imagination, or the hope that there's potentially life after death, or in some cases reincarination.
+                    </p>
+                    <p class='textStyle'> 
+                        If people who think that the soul is the God's Gift, it is important to also know where the soul is going, whether it's being punished, or staying at one place, or being reincarinated. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class='containter reveal'>
+    <div class='row'>
+        <div class='column'>
+        </div>
+        <div class='column'>
+            <div class='text-container'>
+                <div class='box' style='width: auto'>
+                    <div class='subBox' style='text-align: center; margin-top: -9%; margin-bottom: 1%'>
+                        <h1>Sources</h1>
+                    </div>
+                    <p style='margin-top: 1%;' class='textStyle'>
+                        <b>Secondary Sources:</b></p>
+                        <ol type="1">
+                            <li>Lorenz, Hendrik. “Ancient Theories of Soul.” Stanford Encyclopedia of Philosophy, Stanford
+University, 22 Apr. 2009, https://plato.stanford.edu/entries/ancient-sou</li>
+                            <br>
+                            <li>“The Immortality of the Soul.” Encyclopædia Britannica, Encyclopædia Britannica, Inc.,
+https://www.britannica.com/topic/Christianity/The-immortality-of-the-soul</li>
+                            <br>
+                            <li>GIL, DANIEL JUAN. “THE RESURRECTION OF THE BODY AND THE LIFE OF THE
+FLESH IN HENRY VAUGHAN’S RELIGIOUS VERSE.” ELH, vol. 82, no. 1, The Johns
+Hopkins University Press, 2015, pp. 59–86, http://www.jstor.org/stable/24477809.</li>
+                            <br>
+                            <li>My Jewish Learning. “Body and Soul.” My Jewish Learning, 14 Apr. 2021,
+https://www.myjewishlearning.com/article/body-soul/</li>
+                            <br>
+                            <li>Saul Epstein, and Sara Libby Robinson. “The Soul, Evil Spirits, and the Undead: Vampires,
+Death, and Burial in Jewish Folklore and Law.” Preternature: Critical and Historical Studies on
+the Preternatural, vol. 1, no. 2, Penn State University Press, 2012, pp. 232–51,
+https://doi.org/10.5325/preternature.1.2.0232.</li>
+                    </ol>
+                    <br>
+                    <p style=textStyle>
+                        <b>Primary Sources:</b>
+                    </p>
+                    <ol type="1">
+                        <li>Homer - the Odyssey - Boyle.kyschools.us. http://www.boyle.kyschools.us/UserFiles/88/The
+%20Odyssey.pdf.</li>
+                        <br>
+                        <li>Plato Phaedo. https://www.bard.edu/library/arendt/pdfs/Plato_Phaedo.pdf.</li>
+                        <br>
+                        <li>parPCM, Publié. “Hebrew Phrases 178, Sergio Ramos, @SERGIORAMOS.” Face A, Face B, 4
+Nov. 2016, https://ferrusca.wordpress.com/2016/11/04/hp178/.</li>
+                        <br>
+                        <li>The Holy Bible - Triggs.djvu.org.
+http://triggs.djvu.org/djvu-editions.com/BIBLES/DRV/DRV.pdf.</li>
+                        <br>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
